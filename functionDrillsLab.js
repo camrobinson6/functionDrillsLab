@@ -127,8 +127,11 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
-
+function printAllNames(name){
+  for (i = 0; i < name.length; i++)
+  console.log(name[i])
+}
+printAllNames(namesArr)
 ////////////////// PROBLEM 8 ////////////////////
 /*
   Create a function called thatsOdd that takes in a single argument (a number).
