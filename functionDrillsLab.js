@@ -137,11 +137,20 @@ printAllNames(namesArr)
   Create a function called thatsOdd that takes in a single argument (a number).
   Using conditional logic, if the number is even, return 'That's not odd!'
   Otherwise, return 'That is odd indeed!'
-  Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
+  Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, 
+  making sure to pass in an argument.
 */
 
 //CODE HERE
-
+function thatsOdd(numbers){
+  if (numbers % 2 == 0){
+    return ('Thats not odd!');
+  } else {
+    return ('That is odd indeed!');
+  }
+}
+let oddChecker = thatsOdd(8)
+console.log(oddChecker)
 
 ////////////////// PROBLEM 9 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
