@@ -5,6 +5,10 @@
 */
 
 //CODE HERE
+function helloWorld() {
+  console.log('Hello, World!')
+}
+helloWorld()
 
 
 ////////////////// PROBLEM 2 ////////////////////
@@ -15,7 +19,10 @@
 */
 
 //CODE HERE
-
+function printName(name){
+  console.log(name)
+}
+printName('Cameron')
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
