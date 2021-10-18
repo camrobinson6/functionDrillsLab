@@ -64,12 +64,29 @@ function add(num1, num2) {
   Write a function called nameCheck that takes in a name parameter.
   nameCheck should check if the name equals 'Steven'. If it does, return 'What is up Steven?'
   If the name parameter is equal to Bryan, return 'Hey Bryan!'
-  If the name parameter is anything else, return 'Cool name, NAMEPARAM' (with NAMEPARAM being the value of the name parameter being passed in).
-  Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
+  If the name parameter is anything else, return 'Cool name, NAMEPARAM' 
+  (with NAMEPARAM being the value of the name parameter being passed in).
+  Create a variable called 'nameGreeting' and set it equal to your function invoked (called) 
+  passing in an argument.
 */
 
 //CODE HERE
+function nameCheck(name) {
+  if (name == 'Steven'){
+    return ('What is up Steven?');
+  } else if (name == 'Bryan'){
+    return ('Hey Bryan!');
+  } else {
+    return(`Cool name, ${name}.`);
+     
+  }
+}
+  let nameGreeting = nameCheck('Cam')
+  console.log(nameGreeting)
+  
+  
 
+  
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -78,10 +95,27 @@ function add(num1, num2) {
   If the passed in color equals 'green', return 'green is a solid favorite color'
   If the passed in color equals 'black', return 'so trendy'
   Otherwise, you should return the string 'you need to evaluate your favorite color choice'
-  Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
+  Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), 
+  passing in an argument.
 */
 
 //CODE HERE
+function faveColorFinder(color){
+  if (color == 'red'){
+    return('red is a great color');
+  } else if (color == 'green'){
+    return ('green is a solid favorite color');
+  } else if (color == 'black'){
+    return ('so trendy');
+  } else {
+    return ('you need to evaluate your favorite color choice');
+    
+    
+  }
+  
+}
+let colorRating = faveColorFinder('blue')
+console.log(colorRating)
 
 
 ////////////////// PROBLEM 7 ////////////////////
