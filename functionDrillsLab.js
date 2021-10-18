@@ -36,7 +36,12 @@ printName('Cameron')
 */
 
 //CODE HERE
+function greeting(name){
+stringName = String(name)
+console.log('Hello, ' + stringName)
 
+}
+greeting('Cameron')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
