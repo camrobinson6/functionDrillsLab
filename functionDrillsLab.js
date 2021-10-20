@@ -5,7 +5,7 @@
 */
 
 //CODE HERE
-function helloWorld() {
+function helloWorld(){
   console.log('Hello, World!')
 }
 helloWorld()
@@ -72,9 +72,9 @@ function add(num1, num2) {
 
 //CODE HERE
 function nameCheck(name) {
-  if (name == 'Steven'){
+  if (name ==='Steven'){
     return ('What is up Steven?');
-  } else if (name == 'Bryan'){
+  } else if (name ==='Bryan'){
     return ('Hey Bryan!');
   } else {
     return(`Cool name, ${name}.`);
@@ -190,17 +190,31 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+function theEliminator(contestants, loser){
+  for (i = 0; i < contestants.length; i++){ 
+  if (loser == contestants[i]){
+    contestants.splice(i, 1)
+  }
+}
+  return(contestants)
 
+}
+console.log(theEliminator(contestants, loser))
 
 ////////////////// PROBLEM 11 ////////////////////
 let sampleString = "Hi, my name is Kylo."
+
 /*
   Write a function that takes in one argument, a string. The function should then console.log that string, in entirely uppercase characters.
   Invoke the function, passing in the sampleString (above).
 */
 
 //CODE HERE
-
+function stringNames(silly){
+let upperString = silly.toUpperCase() 
+  console.log(upperString)
+}
+stringNames('Cam')
 
 ////////////////// PROBLEM 12 ////////////////////
 /*
@@ -212,6 +226,18 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+
+//CODE HERE
+function emailCheck(email){
+  newEmail = string(email)
+  email = whitespae.trim()
+  if (email){
+    return ('email verified');
+
+  } else {
+    return ('must provide a valid email address')
+  }
+}
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
